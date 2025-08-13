@@ -129,7 +129,7 @@ const styles = {
     marginTop: '20px',
   },
   userCard: {
-    background: 'rgba(26, 26, 26, 0.95)', // solid enough to prevent overlap
+    background: 'rgba(26, 26, 26, 0.95)', 
     border: '1px solid rgba(255, 215, 0, 0.3)',
     borderRadius: '12px',
     padding: '20px',

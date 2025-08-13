@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../AuthProvider';
-import bankIcon from '../../assets/mint.png'; // Make sure path matches your folder
+import bankIcon from '../../assets/mint.png'; 
 
-import './Mint.css'; // Import CSS for animations
+import './Mint.css'; 
 
 const Mint = () => {
   const [amount, setAmount] = useState('');
@@ -17,20 +17,14 @@ const Mint = () => {
 
     try {
       const result = await callFunction.mint_tokens(amount.toString());
-
-      // Case 1: Amount is zero
       if (amount === '0') {
         setStatus('⚠️ 0 tokens not allowed');
         return;
       }
-
-      // Case 2: Mint failed
       if (result === 'Failed') {
         setStatus('❌ You are not the owner.');
         return;
       }
-
-      // Successful mint
       setStatus(`✅ Mint successful: ${amount} tokens minted`);
     } catch (err) {
       console.error("Mint failed:", err);

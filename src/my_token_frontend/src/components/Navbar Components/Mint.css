@@ -8,7 +8,6 @@
   animation: fadeIn 0.8s ease forwards;
 }
 
-/* Spin + Glow animation for icon */
 @keyframes spinGlow {
   0% { transform: rotate(0deg); filter: drop-shadow(0 0 5px gold); }
   50% { transform: rotate(180deg); filter: drop-shadow(0 0 15px gold); }
@@ -22,7 +21,7 @@
   animation: pulseGlow 8s linear infinite;
 }
 
-/* Gold button glow on hover */
+
 .mint-button {
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
@@ -32,7 +31,7 @@
   transform: scale(1.02);
 }
 
-/* Input focus glow */
+
 .mint-input {
   transition: all 0.3s ease;
 }
@@ -41,7 +40,6 @@
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
-/* Status text animation */
 @keyframes pulseGold {
   0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
   50% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.7); }
@@ -66,7 +64,6 @@
   }
 }
 
-/* Float + Glow animation */
 @keyframes floatGlow {
   0% {
     transform: translateY(0);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../AuthProvider';
-import envelopeIcon from '../../assets/transfer.png'; // adjust path if needed
+import envelopeIcon from '../../assets/transfer.png'; 
 
 const Transfer = () => {
   const [receiver, setReceiver] = useState('');
@@ -16,20 +16,14 @@ const Transfer = () => {
 
     try {
       const result = await callFunction.transfer_to(receiver, amount.toString());
-
-      // Case 1: Amount is zero
       if (amount === '0') {
         setStatus('⚠️ Amount cannot be zero');
         return;
       }
-
-      // Case 2: Transfer failed
       if (result === 'Failed') {
         setStatus('❌ You cannot transfer to yourself');
         return;
       }
-
-      // Successful transfer
       setStatus(`✅ Transfer successful: ${amount} tokens sent`);
     } catch (err) {
       console.error("Transfer failed:", err);
@@ -184,7 +178,6 @@ const styles = {
   },
 };
 
-// Inject animation styles into document head
 const animationStyles = `
 @keyframes float {
   0%, 100% { transform: translateY(0); }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './NavBar.css'; // for glow animations
+import './NavBar.css'; 
 
 const Navbar = () => {
   return (

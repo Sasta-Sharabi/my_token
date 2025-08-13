@@ -16,7 +16,6 @@ const Transaction = () => {
     if (principal) {
       fetchTransactions();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [principal]);
 
   const fetchTransactions = async () => {
@@ -34,7 +33,7 @@ const Transaction = () => {
 
   const formatDate = (nanoTime) => {
     try {
-      const date = new Date(Number(nanoTime / BigInt(1_000_000))); // ns → ms
+      const date = new Date(Number(nanoTime / BigInt(1_000_000))); 
       return date.toLocaleString();
     } catch {
       return "Invalid date";

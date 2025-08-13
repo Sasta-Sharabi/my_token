@@ -1,5 +1,5 @@
 import React from 'react';
-import docIcon from '../../assets/docs.png'; // Replace with a documentation icon
+import docIcon from '../../assets/docs.png'; 
 
 const Documentation = () => {
   return (
@@ -78,7 +78,7 @@ const styles = {
   },
 };
 
-// Inject animation styles into document head
+
 const animationStyles = `
 @keyframes float {
   0%, 100% { transform: translateY(0); }

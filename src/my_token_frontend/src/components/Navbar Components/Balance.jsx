@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../AuthProvider';
-import coinIcon from '../../assets/coin-purse.png'; // use your uploaded icon path
+import coinIcon from '../../assets/coin-purse.png';
 
 const Balance = () => {
   const [principal, setPrincipal] = useState('');
@@ -159,7 +159,6 @@ const styles = {
   },
 };
 
-// Inject animation styles into document head
 const animationStyles = `
 @keyframes float {
   0%, 100% { transform: translateY(0); }

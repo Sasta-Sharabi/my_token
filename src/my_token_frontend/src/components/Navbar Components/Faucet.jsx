@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Faucet.css";
-import faucetIcon from "../../assets/faucet.png"; // adjust path if needed
+import faucetIcon from "../../assets/faucet.png"; 
 import { useAuth } from "../../AuthProvider";
 
 export default function Faucet() {

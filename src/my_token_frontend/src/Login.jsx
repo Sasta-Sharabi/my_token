@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from './AuthProvider';
-import coreXLogo from './assets/logo.png'; // make sure this file exists in src/assets
-import './Login.css'; // CSS file for animations
+import coreXLogo from './assets/logo.png';
+import './Login.css'; 
 
 const Login = () => {
   const { login } = useAuth();
@@ -64,7 +64,7 @@ const styles = {
     width: '70px',
     objectFit: 'contain',
     filter: 'drop-shadow(0 0 10px rgba(255, 215, 0, 0.7))',
-    animation: 'spinLogo 8s linear infinite', // defined in CSS file
+    animation: 'spinLogo 8s linear infinite', 
   },
   title: {
     fontSize: '28px',

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { AuthProvider, useAuth } from './AuthProvider';
 import Login from './Login';
 import MainApp from './MainApp';

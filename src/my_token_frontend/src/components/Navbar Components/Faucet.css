@@ -5,7 +5,7 @@
 }
 
 .faucet-container {
-  width: 500px; /* Match Transfer.jsx size */
+  width: 500px; 
   margin: 0 auto;
   text-align: center;
   padding: 40px;
