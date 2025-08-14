@@ -119,6 +119,9 @@ pub fn update_user_details(username: String, email: String){
 pub fn new_user() {
     let mut state = get_state();
 
+    //avoid anonymous principal getting registered
+    if caller() == Principal::anonymous() {return}
+
     // Prevent duplicate registration
     if state.all_user.contains_key(&caller()) || state.all_users_balance.contains_key(&caller()) {
         return;
